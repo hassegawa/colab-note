@@ -1,0 +1,5 @@
+<form method="POST">
+  <input type="text" name="title" class="form-control mb-2" placeholder="Título" value="{{ doc.title if doc else '' }}" required>
+  <textarea name="content" class="form-control" rows="10">{{ doc.content if doc else '' }}</textarea>
+  <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+</form>
